@@ -12,6 +12,7 @@
       background-color: #f9f9f9;
       color: #333;
     }
+
     header {
       background-image: url('bg.jpg');
       background-size: cover;
@@ -24,6 +25,7 @@
       text-align: center;
       position: relative;
     }
+
     .profile-pic {
       border-radius: 50%;
       width: 150px;
@@ -35,48 +37,84 @@
       left: 50%;
       transform: translateX(-50%);
     }
+
     .container {
-      max-width: 900px;
+      max-width: 1100px;
       margin: auto;
       padding: 3rem 1rem 1rem;
       text-align: center;
     }
+
     h1 {
       font-size: 2rem;
       margin-top: 90px;
     }
+
     .contact {
       color: #666;
       margin-bottom: 1rem;
     }
+
     .bio {
       text-align: left;
       margin: 2rem 0;
       line-height: 1.6;
     }
+
+    .samples-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
     .sample {
-      margin-bottom: 2rem;
-      padding: 1rem;
+      display: inline-block;
+      width: 280px;
+      margin: 1rem;
       border: 1px solid #ddd;
-      border-radius: 8px;
+      border-radius: 12px;
       background-color: white;
       text-align: left;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
+    .sample:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
     .sample img {
       width: 100%;
-      max-height: 200px;
+      height: 160px;
       object-fit: cover;
-      border-radius: 6px;
-      margin-bottom: 0.5rem;
+      border-bottom: 1px solid #eee;
+      transition: transform 0.3s ease;
     }
+
+    .sample:hover img {
+      transform: scale(1.05);
+    }
+
     .sample h3 {
-      margin: 0.5rem 0;
+      margin: 0.8rem 1rem 0.3rem;
+      font-size: 1rem;
     }
+
+    .sample p {
+      font-size: 0.9rem;
+      margin: 0 1rem 1rem;
+      color: #555;
+    }
+
     .sample a {
-      color: #1a73e8;
+      color: inherit;
       text-decoration: none;
-      font-weight: 500;
+      display: block;
     }
+
     footer {
       font-size: 0.8rem;
       text-align: center;
@@ -99,55 +137,54 @@
       <p>When I’m not writing, you’ll find me reading (Kafka & Dostoevsky), watching YouTube breakdowns on history or Python, or cooking something new. <strong>Currently writing my first ever horror short story.</strong></p>
     </div>
 
-    <div class="sample">
-      <a href="https://open.spotify.com/episode/0MoR1Dcd9IxUEK4N85swjZ" target="_blank">
-        <img src="Abhyaz podcast.png" alt="Podcast Episode Thumbnail">
-        <h3>🎧 Podcast Summary – Zoho Recruit: Episode 1</h3>
-      </a>
-      <p>Summary and writing for a podcast episode on Zoho Recruit, automation, and CRM insights.</p>
-    </div>
+    <div class="samples-grid">
+      <div class="sample">
+        <a href="https://open.spotify.com/episode/0MoR1Dcd9IxUEK4N85swjZ" target="_blank">
+          <img src="Abhyaz podcast.png" alt="Podcast Episode Thumbnail">
+          <h3>🎧 Podcast Summary – Zoho Recruit: Episode 1</h3>
+          <p>Summary and writing for a podcast episode on Zoho Recruit, automation, and CRM insights.</p>
+        </a>
+      </div>
 
-    <div class="sample">
-      <a href="https://www.abhyaz.com/about-us" target="_blank">
-        <img src="Abhyaz web.png
-" alt="Abhyaz Logo">
-        <h3>🖥️ Website Rewrite – Abhyaz (About Us Page)</h3>
-      </a>
-      <p>Reworked About Us content for brand clarity, user connection, and SEO alignment.</p>
-    </div>
+      <div class="sample">
+        <a href="https://www.abhyaz.com/about-us" target="_blank">
+          <img src="Abhyaz web.png" alt="Abhyaz Logo">
+          <h3>🖥️ Website Rewrite – Abhyaz (About Us Page)</h3>
+          <p>Reworked About Us content for brand clarity, user connection, and SEO alignment.</p>
+        </a>
+      </div>
 
-    <div class="sample">
-      <a href="https://cnctrain.com/" target="_blank">
-        <img src="CNCTrain (1).png
-" alt="CNCTrain Logo">
-        <h3>🛠️ Website Content & UX Analysis – CNCTrain</h3>
-      </a>
-      <p>User-focused rewrite and structure improvements for CNCTrain’s homepage and offerings.</p>
-    </div>
+      <div class="sample">
+        <a href="https://cnctrain.com/" target="_blank">
+          <img src="CNCTrain (1).png" alt="CNCTrain Logo">
+          <h3>🛠️ Website Content & UX Analysis – CNCTrain</h3>
+          <p>User-focused rewrite and structure improvements for CNCTrain’s homepage and offerings.</p>
+        </a>
+      </div>
 
-    <div class="sample">
-      <a href="https://www.linkedin.com/posts/abhyazcooperative_zohocrm-customerexperience-crmtools-activity-7336030492351168512-eN9X" target="_blank">
-        <img src="Contact.png
-" alt="Zoho CRM Post">
-        <h3>📢 LinkedIn Campaign – Zoho CRM for Customer Experience</h3>
-      </a>
-      <p>Social content for CRM feature campaign focused on customer experience and feedback flow.</p>
-    </div>
+      <div class="sample">
+        <a href="https://www.linkedin.com/posts/abhyazcooperative_zohocrm-customerexperience-crmtools-activity-7336030492351168512-eN9X" target="_blank">
+          <img src="Contact.png" alt="Zoho CRM Post">
+          <h3>📢 LinkedIn Campaign – Zoho CRM for Customer Experience</h3>
+          <p>Social content for CRM feature campaign focused on customer experience and feedback flow.</p>
+        </a>
+      </div>
 
-    <div class="sample">
-      <a href="https://www.linkedin.com/posts/abhyazcooperative_abhyaz-crmimplementation-marketingdashboard-activity-7338187424411312128-hF3E" target="_blank">
-        <img src="Campaign.png" alt="Marketing Dashboard Post">
-        <h3>📈 LinkedIn Campaign – Marketing Dashboard Launch</h3>
-      </a>
-      <p>Copy for CRM-based dashboard implementation post highlighting marketing metrics.</p>
-    </div>
+      <div class="sample">
+        <a href="https://www.linkedin.com/posts/abhyazcooperative_abhyaz-crmimplementation-marketingdashboard-activity-7338187424411312128-hF3E" target="_blank">
+          <img src="Campaign.png" alt="Marketing Dashboard Post">
+          <h3>📈 LinkedIn Campaign – Marketing Dashboard Launch</h3>
+          <p>Copy for CRM-based dashboard implementation post highlighting marketing metrics.</p>
+        </a>
+      </div>
 
-    <div class="sample">
-      <a href="https://www.linkedin.com/posts/abhyazcooperative_petfoodmarketing-leadgeneration-zohocrmintegration-activity-7338535131080491008-fKTc" target="_blank">
-        <img src="Lead.png" alt="Pet Food Campaign">
-        <h3>🐾 LinkedIn Campaign – Zoho CRM for Pet Food Marketing</h3>
-      </a>
-      <p>Creative post for pet food brand’s CRM integration and lead generation campaign.</p>
+      <div class="sample">
+        <a href="https://www.linkedin.com/posts/abhyazcooperative_petfoodmarketing-leadgeneration-zohocrmintegration-activity-7338535131080491008-fKTc" target="_blank">
+          <img src="Lead.png" alt="Pet Food Campaign">
+          <h3>🐾 LinkedIn Campaign – Zoho CRM for Pet Food Marketing</h3>
+          <p>Creative post for pet food brand’s CRM integration and lead generation campaign.</p>
+        </a>
+      </div>
     </div>
   </div>
 
@@ -156,3 +193,4 @@
   </footer>
 </body>
 </html>
+
